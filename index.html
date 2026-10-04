@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog PTI – Dunia Sistem, Informasi & Pengetahuan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="bar"></div>
+
+    <nav>
+      <b class="logo">&lt;&gt;</b>
+      <div id="menu">
+        <a href="#sistem">Sistem</a><a href="#informasi">Informasi</a
+        ><a href="#pengetahuan">Pengetahuan</a>
+        <a href="#manajemen">Manajemen</a><a href="#dbms">DBMS</a
+        ><a href="#perbedaan">Sistem Pakar</a> <a href="#kuis">Kuis</a
+        ><a href="#video">Video</a><a href="#pustaka">Pustaka</a>
+      </div>
+      <button id="theme" aria-label="Ganti tema">🌓</button>
+    </nav>
+
+    <header class="hero">
+      <canvas id="net"></canvas>
+      <div class="hero-text">
+        <p class="tag">
+          Proyek PjBL • Pengantar Teknologi Informasi • SI UINSU
+        </p>
+        <h1><span id="typed"></span><i class="cursor">|</i></h1>
+        <p class="sub">
+          Jelajahi konsep dasar lewat demo interaktif. Klik, geser, dan coba
+          sendiri!
+        </p>
+        <p class="by">
+          Oleh <b>[Jona Gerry Aoysius Simanjuntak]</b> • NIM [0702262064]
+        </p>
+        <a class="btn" href="#sistem">Mulai Belajar ↓</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="sistem" class="reveal">
+        <h2><span>01</span> Pengertian Sistem</h2>
+        <p>
+          Sistem adalah kumpulan elemen yang saling berhubungan dan bekerja sama
+          untuk mencapai tujuan tertentu.
+          <em>[Tambahkan kutipan ahli, mis. (Jogiyanto, 2005)]</em>
+        </p>
+        <p class="hint">
+          👇 Klik tiap tahap untuk melihat contoh <b>Sistem Akademik Kampus</b>
+        </p>
+        <div class="ipo">
+          <button
+            class="chip on"
+            data-t="Mahasiswa mengisi KRS, data nilai, dan absensi masuk ke sistem."
+          >
+            INPUT
+          </button>
+          <span>➜</span>
+          <button
+            class="chip"
+            data-t="Sistem menghitung IPK, memeriksa batas SKS, dan memvalidasi jadwal."
+          >
+            PROSES
+          </button>
+          <span>➜</span>
+          <button
+            class="chip"
+            data-t="Keluar KHS, transkrip, dan jadwal kuliah yang siap dicetak."
+          >
+            OUTPUT
+          </button>
+        </div>
+        <div class="box" id="ipoText">
+          Mahasiswa mengisi KRS, data nilai, dan absensi masuk ke sistem.
+        </div>
+        <div class="contoh">
+          <b>Contoh lain:</b> sistem pencernaan, sistem transportasi, sistem
+          ATM.
+        </div>
+      </section>
+
+      <section id="informasi" class="reveal">
+        <h2><span>02</span> Pengertian Informasi</h2>
+        <p>
+          Informasi adalah data yang sudah diolah menjadi bentuk yang berguna
+          dan bermakna untuk pengambilan keputusan.
+          <em>[Tambahkan kutipan ahli]</em>
+        </p>
+        <p class="hint">🎚️ Geser slider: data ➜ informasi ➜ pengetahuan</p>
+        <input type="range" id="dik" min="0" max="2" value="0" />
+        <div class="box big" id="dikOut"></div>
+      </section>
+
+      <section id="pengetahuan" class="reveal">
+        <h2><span>03</span> Pengetahuan & Pakar</h2>
+        <p>
+          Pengetahuan adalah informasi yang sudah dipahami dan dikaitkan dengan
+          pengalaman sehingga bisa dipakai untuk bertindak. Pakar adalah orang
+          dengan keahlian mendalam pada bidang tertentu.
+          <em>[Tambahkan kutipan ahli]</em>
+        </p>
+        <p class="hint">🃏 Klik kartu untuk membaliknya</p>
+        <div class="cards">
+          <div class="flip">
+            <div><b>Pengetahuan</b></div>
+            <div>
+              Hasil mengetahui; contoh: tahu bahwa IPK di bawah 2,0 berisiko
+              diberi peringatan akademik.
+            </div>
+          </div>
+          <div class="flip">
+            <div><b>Pakar</b></div>
+            <div>
+              Contoh: dokter spesialis jantung, ahli hama tanaman, atau dosen
+              senior di bidangnya.
+            </div>
+          </div>
+          <div class="flip">
+            <div><b>Basis Pengetahuan</b></div>
+            <div>
+              Tempat pengetahuan pakar disimpan di komputer dalam bentuk fakta
+              dan aturan IF–THEN.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="manajemen" class="reveal">
+        <h2><span>04</span> Pengertian Manajemen</h2>
+        <p>
+          Manajemen adalah proses merencanakan, mengorganisasikan, mengarahkan,
+          dan mengendalikan sumber daya agar tujuan organisasi tercapai efektif
+          dan efisien. <em>[Tambahkan kutipan ahli, mis. G.R. Terry]</em>
+        </p>
+        <div class="tabs" id="poac">
+          <button
+            class="chip on"
+            data-t="Planning (Perencanaan): menentukan tujuan dan langkah. Contoh: menyusun jadwal proyek pembuatan blog."
+          >
+            P
+          </button>
+          <button
+            class="chip"
+            data-t="Organizing (Pengorganisasian): membagi tugas dan sumber daya. Contoh: membagi peran desain, konten, dan coding."
+          >
+            O
+          </button>
+          <button
+            class="chip"
+            data-t="Actuating (Pengarahan): menggerakkan pelaksanaan. Contoh: ketua tim memberi arahan dan motivasi."
+          >
+            A
+          </button>
+          <button
+            class="chip"
+            data-t="Controlling (Pengendalian): memantau dan mengevaluasi. Contoh: mengecek progres terhadap tenggat."
+          >
+            C
+          </button>
+        </div>
+        <div class="box" id="poacText">
+          Planning (Perencanaan): menentukan tujuan dan langkah. Contoh:
+          menyusun jadwal proyek pembuatan blog.
+        </div>
+      </section>
+
+      <section id="dbms" class="reveal">
+        <h2><span>05</span> Sistem Manajemen Basis Data (DBMS)</h2>
+        <p>
+          Basis data adalah kumpulan data terorganisasi yang saling berhubungan.
+          DBMS adalah perangkat lunak untuk membuat, mengelola, dan mengakses
+          basis data. <em>[Tambahkan kutipan ahli]</em>
+        </p>
+        <div class="contoh">
+          <b>Contoh DBMS:</b> MySQL • PostgreSQL • Oracle • SQL Server • SQLite
+        </div>
+        <p class="hint">
+          🔎 Mini database: ketik untuk mencari (seperti perintah SELECT ...
+          WHERE)
+        </p>
+        <input
+          type="search"
+          id="q"
+          placeholder="Cari nama atau prodi, mis. Sistem"
+        />
+        <div class="wrap">
+          <table id="db">
+            <thead>
+              <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Prodi</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <code id="sql">SELECT * FROM mahasiswa;</code>
+      </section>
+
+      <section id="perbedaan" class="reveal">
+        <h2><span>06</span> Sistem Pakar vs Sistem Berbasis Pengetahuan</h2>
+        <p>
+          Sistem berbasis pengetahuan (<i>knowledge-based system</i>) adalah
+          istilah yang lebih luas. Sistem pakar adalah salah satu jenisnya, yang
+          khusus meniru keahlian seorang pakar pada bidang sempit.
+          <em>[Verifikasi dengan buku/jurnal]</em>
+        </p>
+        <div class="wrap">
+          <table id="cmp">
+            <thead>
+              <tr>
+                <th>Aspek</th>
+                <th>Sistem Pakar</th>
+                <th>Sistem Berbasis Pengetahuan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cakupan</td>
+                <td>Sempit (satu bidang keahlian)</td>
+                <td>Luas, mencakup sistem pakar</td>
+              </tr>
+              <tr>
+                <td>Sumber pengetahuan</td>
+                <td>Pakar manusia</td>
+                <td>Pakar, dokumen, kasus, data</td>
+              </tr>
+              <tr>
+                <td>Tujuan</td>
+                <td>Meniru keputusan pakar</td>
+                <td>Memanfaatkan pengetahuan untuk menyelesaikan masalah</td>
+              </tr>
+              <tr>
+                <td>Metode umum</td>
+                <td>Aturan IF–THEN, forward/backward chaining</td>
+                <td>Aturan, penalaran berbasis kasus, ontologi</td>
+              </tr>
+              <tr>
+                <td>Contoh</td>
+                <td>Diagnosis penyakit tanaman dari gejala</td>
+                <td>Help desk TI berbasis kasus</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>🧪 Coba Sistem Pakar Mini: Diagnosis Penyakit Padi</h3>
+        <p class="hint">
+          Centang gejala, lalu mesin inferensi (forward chaining) mencocokkan
+          aturan. Ini hanya demo sederhana, bukan diagnosis resmi.
+        </p>
+        <div id="gejala" class="checks"></div>
+        <div class="box" id="hasil">Pilih minimal satu gejala…</div>
+        <ul id="trace"></ul>
+      </section>
+
+      <section id="kuis" class="reveal">
+        <h2><span>07</span> Kuis Singkat</h2>
+        <div id="quiz"></div>
+      </section>
+
+      <section id="video" class="reveal">
+        <h2><span>08</span> Video Pembelajaran</h2>
+        <div class="video">
+          <iframe
+            id="yt"
+            title="Video pembelajaran"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <p>
+          Sumber video:
+          <a id="ytlink" href="#" target="_blank" rel="noopener"
+            >[judul video – nama channel]</a
+          >
+        </p>
+      </section>
+
+      <section id="pustaka" class="reveal">
+        <h2><span>09</span> Daftar Pustaka</h2>
+        <p><b>Buku (min. 3)</b></p>
+        <ol>
+          <li>
+            [Penulis]. ([Tahun]). <i>[Judul buku]</i>. [Kota]: [Penerbit].
+          </li>
+          <li>
+            [Penulis]. ([Tahun]). <i>[Judul buku]</i>. [Kota]: [Penerbit].
+          </li>
+          <li>
+            [Penulis]. ([Tahun]). <i>[Judul buku]</i>. [Kota]: [Penerbit].
+          </li>
+        </ol>
+        <p><b>Jurnal (min. 12)</b></p>
+        <ol>
+          <li>
+            [Penulis]. ([Tahun]). [Judul artikel]. <i>[Nama Jurnal]</i>,
+            [Vol]([No]), [hlm]. [URL/DOI]
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 [Nama Kamu] • Tugas PjBL PTI, Prodi Sistem Informasi UINSU
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
